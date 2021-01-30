@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { QuicklinkStrategy } from 'ngx-quicklink';
+import { HoverPreloadStrategy } from 'ngx-hover-preload';
 
 const routes: Routes = [
   {
@@ -18,7 +18,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: QuicklinkStrategy }),
+    RouterModule.forRoot(routes, { preloadingStrategy: HoverPreloadStrategy }),
   ],
   exports: [RouterModule],
 })
